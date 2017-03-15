@@ -90,7 +90,7 @@ def get_info(s):
 #If new articles were found. Concat new articles with csv of already scraped articles. Replace old csv
 if len(df) > 0:
     df["Fulltexts"], df["Author"], df['Top_image_link'], df['Movie_link'], df['Keywording'],df['Sources'] = zip(*df["Links"].apply(get_info))
-    df.replace( {'Author' :
+    df = df.replace( {'Author' :
                             { "[" : '', 
                               "]": '',
                               "'Spiegel Online',":'',
