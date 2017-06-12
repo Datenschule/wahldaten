@@ -1,3 +1,4 @@
 notebooks/.ipynb_checkpoints
 .idea
 de_bundestag_plpr.csv
+scripts/rss_to_json/node_modules
